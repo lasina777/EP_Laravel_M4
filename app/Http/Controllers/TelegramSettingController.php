@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 class TelegramSettingController extends Controller
 {
     /**
+     * Вызов страницы со всеми настройками
      * Display a listing of the resource.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
@@ -21,6 +22,7 @@ class TelegramSettingController extends Controller
     }
 
     /**
+     * Вызов страницы для создания настройки
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
@@ -31,6 +33,7 @@ class TelegramSettingController extends Controller
     }
 
     /**
+     * Функция создания настройки
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -54,6 +57,7 @@ class TelegramSettingController extends Controller
     }
 
     /**
+     * Вызов страницы для редактировния настройки
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\TelegramSetting  $telegramSetting
@@ -65,6 +69,7 @@ class TelegramSettingController extends Controller
     }
 
     /**
+     * Функция редактирования настройки
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

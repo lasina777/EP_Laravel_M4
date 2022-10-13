@@ -2,6 +2,7 @@
 
 @section('title', 'главная страница')
 
+{{--Секция с главной страницей--}}
 @section('content')
     <div class="container">
         <div class="row">

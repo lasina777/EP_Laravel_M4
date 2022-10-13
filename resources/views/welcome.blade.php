@@ -1,3 +1,4 @@
+{{--Корневой шаблон с навигацией--}}
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,7 +24,7 @@
                     </li>
                     @auth
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('telegram-setting.index')}}">Настройки Telegram</a>
+                            <a class="nav-link" href="{{route('telegram-setting.index')}}">Н(иггер)астройки Telegram</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Команды Telegram</a>

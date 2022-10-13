@@ -2,6 +2,7 @@
 
 @section('title', 'создание настроек')
 
+{{--Секция с созданием параметров--}}
 @section('content')
     <div class="container mt-2">
         <div class="row">

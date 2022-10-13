@@ -2,6 +2,7 @@
 
 @section('title', 'Страница настройки телеграмма')
 
+{{--Секция с параметрами настройки телеграмм бота--}}
 @section('content')
     <div class="container mt-3">
         <div class="row">

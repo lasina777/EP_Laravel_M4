@@ -9,5 +9,10 @@ class TelegramCommand extends Model
 {
     use HasFactory;
 
+    /**
+     * Защита колонки id от изменения
+     *
+     * @var string[]
+     */
     protected $guarded = ['id'];
 }
