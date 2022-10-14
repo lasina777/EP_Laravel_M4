@@ -24,10 +24,10 @@
                     </li>
                     @auth
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('telegram-setting.index')}}">Н(иггер)астройки Telegram</a>
+                            <a class="nav-link" href="{{route('telegram-setting.index')}}">Настройки Telegram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Команды Telegram</a>
+                            <a class="nav-link" href="{{route('telegram-command.index')}}">Команды Telegram</a>
                         </li>
                     @endauth
 
@@ -41,5 +41,7 @@
         </div>
     </nav>
     @yield('content')
+    {{-- Здесь будет точка на которую мы будем подключать свой JS код--}}
+    @stack('script')
 </body>
 </html>

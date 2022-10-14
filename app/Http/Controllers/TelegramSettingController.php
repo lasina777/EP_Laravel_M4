@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\EditParametrsValidationRequest;
 use App\Http\Requests\ParametrsValidationRequest;
 use App\Models\TelegramSetting;
+use http\Exception\BadConversionException;
 use Illuminate\Http\Request;
 
 class TelegramSettingController extends Controller
@@ -46,14 +47,15 @@ class TelegramSettingController extends Controller
     }
 
     /**
+     * Перекидывание туда, откуда пришел пользователь
      * Display the specified resource.
      *
      * @param  \App\Models\TelegramSetting  $telegramSetting
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
     public function show(TelegramSetting $telegramSetting)
     {
-
+        return back();
     }
 
     /**
@@ -86,10 +88,12 @@ class TelegramSettingController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\TelegramSetting  $telegramSetting
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
     public function destroy(TelegramSetting $telegramSetting)
     {
-        //
+        # Удаляем элемент
+        $telegramSetting->delete();
+        return back()->with(['successError' => true]);
     }
 }

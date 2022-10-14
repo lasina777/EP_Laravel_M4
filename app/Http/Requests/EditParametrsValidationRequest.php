@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class EditParametrsValidationRequest extends FormRequest
 {
@@ -26,7 +27,11 @@ class EditParametrsValidationRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:telegram_settings,name,' .$this->route()->parameter('telegramSetting', 0),
+            'name' => [
+                'required',
+                Rule::unique('telegram_settings', 'name')
+                    ->ignore($this->route('telegramSetting'))
+            ],
             'val' => 'required'
         ];
     }

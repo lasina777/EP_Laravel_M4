@@ -8,6 +8,9 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-12 col-md-6">
+                @if(session()->has('successError'))
+                    <div class="alert alert-success mt-3 mb-3">Элемент успешно удален</div>
+                @endif
                 @if(session()->has('success'))
                     <div class="alert alert-success mt-3 mb-3">Новый параметр успешно создан</div>
                 @endif
@@ -25,4 +28,6 @@
             <div class="col"></div>
         </div>
     </div>
+
+    @include('components.destroy_modal', ['nameRoute' => 'telegram-setting.index'])
 @endsection

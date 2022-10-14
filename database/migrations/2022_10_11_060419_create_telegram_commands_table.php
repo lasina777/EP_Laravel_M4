@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('telegram_commands', function (Blueprint $table) {
             $table->id();
             $table->string('command');
-            $table->text('content');
+            $table->text('context');
             $table->timestamps();
         });
     }
