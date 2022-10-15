@@ -2,6 +2,7 @@
 
 @section('title', 'страница всех команд')
 
+{{--Секция для вывода всех команд--}}
 @section('content')
     <div class="container">
         <div class="row">

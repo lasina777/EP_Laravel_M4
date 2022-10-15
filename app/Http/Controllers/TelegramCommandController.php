@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 class TelegramCommandController extends Controller
 {
     /**
+     * Вызов шаблона со всеми командами
      * Display a listing of the resource.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
@@ -21,6 +22,7 @@ class TelegramCommandController extends Controller
     }
 
     /**
+     * Вызов шаблона создания команды
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
@@ -31,6 +33,7 @@ class TelegramCommandController extends Controller
     }
 
     /**
+     * Функция создания команды
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -43,6 +46,7 @@ class TelegramCommandController extends Controller
     }
 
     /**
+     * Показ команды
      * Display the specified resource.
      *
      * @param  \App\Models\TelegramCommand  $telegramCommand
@@ -54,6 +58,7 @@ class TelegramCommandController extends Controller
     }
 
     /**
+     * Вызов шаблона редактирования команды
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\TelegramCommand  $telegramCommand
@@ -65,6 +70,7 @@ class TelegramCommandController extends Controller
     }
 
     /**
+     * Редактирование команды
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -78,6 +84,7 @@ class TelegramCommandController extends Controller
     }
 
     /**
+     * Удаление команды
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\TelegramCommand  $telegramCommand

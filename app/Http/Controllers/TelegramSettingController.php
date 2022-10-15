@@ -85,6 +85,7 @@ class TelegramSettingController extends Controller
     }
 
     /**
+     * Удаление настройки
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\TelegramSetting  $telegramSetting

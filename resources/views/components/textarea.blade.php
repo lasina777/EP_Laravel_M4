@@ -1,3 +1,4 @@
+{{--Шаблон для создания и редактирования праметров--}}
 <div class="mb-3">
     <label for="input{{$input['name']}}"
            class="form-label">
